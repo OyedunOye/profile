@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Shady Bee
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div id="prof_pic">
+        <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/08/learn-coding-online-for-free.webp" width="450px"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Shady Bee! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am new to programming and my ambition is to become a full-stack developer.
+            To achieve my dream, I have enrolled in IBM Full Stack Software Developer course, and I am determined to complete the courses, and also to enrole in as many more needed to realize my goal.
+            As of now, I am learning about JavaScript, CSS and html. I have prior experiences with python.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>3 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>1 year experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>3 year experience</p>
+          </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Measurement Converter</h3>
+            <ul>
+                <li>Developed a machine which converts between 2 unit measurements of weight, temperature and distance. </li>
+                <li>Converts weight from kilogram to pounds and vice-versa</li>
+                <li>Converts temparature from degrees celcius to degrees fahrenheit and vice versa</li>
+                <li>Converts distance from kilometers to miles and vice-versa</li>
+                <li>Developed using HTML, CSS and  JavaScript</li>            
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Simple Interest Calculator</h3>
+            <ul>
+                <li>Developed a calculator to help Goodey Goodie bank facilitate their loan granting scheme. This was developed using HTML, CSS and JavaScript</li>            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Restaurant Website</h3>
+            <ul>
+                <li>Created a styled multi-page website for a new African restaurant in Australia, presenting attractive foreign cuissine and integrated it with a shopping cart, using stripe for payment gateway</li>            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Shady was a classmate back in coding bootcamp days. She is an easy going person who is eager to share her ideas with fellow classmates. She is a wonderful fellow going places.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Being in Shady's team is a remarkable experience. She is always ready to share her knowledge and help all other team members just to achieve our common goal in a timely manner.I hope our paths cross again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I am currently working with Shady. She has a very vast experience working with Python, JavaScript, CSS for website development. She is very ambitious and a great teammate! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>I sincerely appreciate your recommendation on my page!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
